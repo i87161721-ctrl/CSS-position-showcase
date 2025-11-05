@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>📙 Absolute Position - CSS Position Properties</h1>
+        <p>Yahan hum "Absolute" positon k bary mai likhengy</p>
+    </header>
+
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="static.html">📘 Static</a>
+        <a href="relative.html">📗 Relative</a>
+        <a href="absolute.html" class="active">📙 Absolute</a>
+        <a href="fixed.html">📒 Fixed</a>
+        <a href="sticky.html">📕 Sticky</a>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>✨ Absolute Postion kiya hoti hai?</h2>
+            <p><b>position; absolute:</b> us element ko normal document flow sy nikal dyta hai. ye element apny <i>
+                    nearsest positioned parent</i> (wo parent jis mai position: relative|absolute|fixed set ho) k
+                refrence per place hota hai. Agr aisa parent na ho to ye <b>body</b> k reference per set ho jata hai.
+            </p>
+            <p><i>Absolute</i> element ko hum bilkul wohi jagah set kar sakte hain jahan hum chahein
+                top/left/bottom/right values se.</p>
+        </section>
+        <section class="example-box">
+            <h3>📙 Example (parent: relative, child: absolute)</h3>
+            <p>Neeche ek parent container hai jiske andar ek absolute box top-right corner par set hai.</p>
+            <div class="abs-parent" style="margin: 30px auto; width: 80%; max-width: 900px;">
+                <div class="abs-parent-inner">
+                    <p style="color:#dfeffb; padding: 12px; margin:0;">
+                        Parent Container Yeh relative positioned parent hai. light shade se highlight hua
+                        wa.
+                    </p>
+                    <div class="abs-child">
+                        Mai <b>Absolute Box</b> hoon top: 20px, right: 20px.
+                    </div>
+                    <div class="abs-child">
+                        Main <b>Absolute Box</b> hoon — top: 20px, right: 20px.
+                    </div>
+                    <div class="abs-content">
+                        <p>
+                            absolute box parent ke andar overlap karta
+                            hai
+                            aur page ke normal flow ko affect nahi karta.
+                        </p>
+                        <p>
+                            agar parent ki height barhti hai ya kam hoti hai, absolute box apne specified
+                            coordinates par hi rahega.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="note">
+            <h4> Important Notes</h4>
+            <ul>
+                <li>Absolute element document flow se bahar nikal jata hai — is ka matlab hai ke wo doosre elements ke
+                    layout ko push nahi karta.</li>
+                <li>Agar parent par <code>position: relative;</code> na ho, to absolute element <b>body</b> ke relative
+                    ho kar place hota hai.</li>
+                <li>Absolute position bohot useful hai jab hum overlays, custom tooltips, modals, ya exact placement
+                    chahte hain.</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        🌸 Designed by <b>Iqra Khan</b> | Absolute Position Example 🌸
+    </footer>
+</body>
+
+</html>

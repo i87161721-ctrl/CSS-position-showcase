@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>💠 Relative Position - CSS Position Properties</h1>
+        <p>Yahan hum "Relative" positon k bary mai likhengy</p>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="static.html">📘 Static</a>
+        <a href="relative.html" class="active">📗 Relative</a>
+        <a href="absolute.html">📙 Absolute</a>
+        <a href="fixed.html">📒 Fixed</a>
+        <a href="sticky.html">📕 Sticky</a>
+    </nav>
+</body>
+<main>
+    <section class="intro">
+        <h2>📗 Relative Position kiya hoti hai?</h2>
+        <p>
+            Jab hum ksi element ko <b>postion: Relative;</b> dyty hain to wo apni normal jagha sy move ho sakta hai
+            lekin uski original space layout mai rehti hai. ye element visually shft hota hai lekin dosry elements iski
+            porani jagha ko occupied samjhty hain.
+        </p>
+        <p>
+            Ye property bhut useful hoti hai jab humein element ko thora adjust karna ho bagair overall layout bigary
+            huy.
+        </p>
+    </section>
+    <section class="example-box">
+        <h3>💠 Example:</h3>
+        <p>Yahan 1 box normal position mai hai or dosra relative position sy move hua hai (top or left sy) .</p>
+
+        <div class="relative-container">
+            <div class="rel-box box1">Box 1 (Normal)</div>
+            <div class="rel-box box2">Box 2 (Relative)</div>
+        </div>
+    </section>
+    <section class="note">
+        <p><b>Note:</b> Relative position jab use ful hoti hai jab hum ksi child element ko absolute position dyna chaty
+            hain q k absolute position apny nearest relative parent k hisaab sy set hoti hai .</p>
+    </section>
+</main>
+<footer>
+    🌸 Designed by <b>Iqra Khan</b> | Relative Position Example 🌸
+</footer>
+
+</html>

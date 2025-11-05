@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>📕 Sticky Position - CSS Position Properties</h1>
+        <p>Yahan hum "Sticky" positon k bary mai likhengy</p>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="static.html">📘 Static</a>
+        <a href="relative.html">📗 Relative</a>
+        <a href="absolute.html">📙 Absolute</a>
+        <a href="fixed.html">📒 Fixed</a>
+        <a href="sticky.html" class="active">📕 Sticky</a>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>✨ Sticky Position kiya hoti hai?</h2>
+            <p>
+                Jab hum kisi element ko <b>position: sticky;</b> dety hain to wo pehle normal flow (relative) ke sath
+                behave karta hai
+                lekin jaisy hi hum scroll karte hain or wo screen ke top (ya kisi defined point) tak ponchta hai
+                tab wo <b>fixed</b> ki tarah chipak jata hai.
+            </p>
+            <p>
+                Isko aksar <b>section headers</b> aur <b>menu bars</b> ke liye use kiya jata hai,
+                taake wo scroll hone par visible rahen.
+            </p>
+        </section>
+        <section class="example-box">
+            <h3>📕 Example (Sticky Header for Sections)</h3>
+            <p>Jab hum content ko scroll karengy to unki headings screen per chipak jati hai yehi <b>sticky position</b>
+                ka effect hai.</p>
+            <div class="sticky-container">
+                <section class="block">
+                    <h4 class="sticky-header">🌿 Section 1 - Nature</h4>
+                    <p>
+                        Nature hamesha insan ke liye sukoon or inspiration ka zariya rahi hai. Sticky property bhi aise
+                        hi calmly chipki rehti hai.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eu erat tempus
+                        dignissim.</p>
+                </section>
+                <section class="block">
+                    <h4 class="sticky-header">🌊 Section 2 - Ocean</h4>
+                    <p>
+                        Ocean ki tarah sticky elements bhi smooth transition ke sath move karte hain or ek position par
+                        ruk jaty hain.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida magna at elit pretium, vel
+                        tincidunt purus fermentum.</p>
+                </section>
+                <section class="block">
+                    <h4 class="sticky-header">🌄 Section 3 - Mountains</h4>
+                    <p>
+                        Mountains hamesha ek jagah mazbooti se khary rehte hain jaise sticky headers scroll hone par
+                        apni position hold karte hain.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed libero vel lectus ultrices
+                        egestas.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="note">
+            <h4> Important Notes </h4>
+            <ul>
+                <li><b>Sticky</b> position ek mix hai initially relative, aur scroll hone par fixed.</li>
+                <li>Isko usually top, left, ya right ke saath define karte hain jaise: <code>top: 0;</code></li>
+                <li>Sticky tab hi kaam karta hai jab parent element ke andar scroll space ho.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        🌸 Designed by <b>Iqra Khan</b> | Sticky Position Example 🌸
+    </footer>
+</body>
+
+</html>

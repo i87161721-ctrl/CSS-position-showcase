@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>📒 Fixed Position - CSS Position Properties</h1>
+        <p>Yahan hum "Fixed" positon k bary mai likhengy</p>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="static.html">📘 Static</a>
+        <a href="relative.html">📗 Relative</a>
+        <a href="absolute.html">📙 Absolute</a>
+        <a href="fixed.html" class="active">📒 Fixed</a>
+        <a href="sticky.html">📕 Sticky</a>
+    </nav>
+    <main>
+        <section class="intro">
+            <h2>✨ Fixed Position kiya hoti hai?</h2>
+            <p>Jab hum ksi element per <b>postion: fixed;</b> lagaty hain to wo page k scroll hony per b ek hi jagha per
+                rehta hai. Ye element <i>viewport</i> k sath fix hota hai matlab ye parent element k sath fix nahi hota
+                , screen k sath fix hota hai </p>
+            <p>Is position ko aksar <b>navigation bars</b>, <b>"back to top" buttons</b> or <b>sticky headers</b> k liye
+                use kiya jata hai.</p>
+        </section>
+        <section class="example-box">
+            <h3>📒 Example (Fixed Header Or fixed Button)</h3>
+            <p> Neeche ek scrollable content hai jis mai top par ek fixed header hai
+                or nichy right side par ek fixed button.</p>
+            <div class="fixed-container">
+                <div class="fixed-header">Ye Fixed Header hai Scroll karny per ye yahin rahyga.</div>
+
+                <div class="scroll-content">
+                    <p>
+                        Ye text content hai jis sy scroll karne par hum dekhengy ke header hamesha upar hi rehta hai.
+                    </p>
+                    <p>
+                        Jab hum fixed element set karte hain, to wo <b>screen k viewport</b> ke relative position hold
+                        karta
+                        hai.
+                    </p>
+                    <p>
+                        Agar hum poora page scroll karein to tab bhi header or button apni jagha par hi rahte hain
+                        yehi unka magic hai.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in libero at sapien cursus
+                        euismod.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        Proin facilisis, elit vel interdum facilisis, magna magna ultrices justo, vel tincidunt lectus
+                        lorem sit amet lorem.
+                        Mauris tincidunt, est eget vulputate mattis, lorem justo mattis purus, a facilisis ligula urna
+                        nec ipsum.
+                    </p>
+                    <p>
+                        Continue scrolling to observe how the fixed button stays visible in the bottom corner.
+                    </p>
+                </div>
+                <button class="fixed-btn">⬆ Back to Top</button>
+            </div>
+        </section>
+        <section class="note">
+            <h4> Important Notes</h4>
+            <ul>
+                <li><b>Fixed</b> elements screen ke sath chipak jaaty hain scroll par move nahi karte.</li>
+                <li>Fixed position mostly <b>header</b>, <b>navbar</b>, ya <b>floating button</b> ke liye use hoti hai.
+                </li>
+                <li>Fixed element document flow se bahar nikal jata hai iska matlab ye space nahi ghyrta.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        🌸 Designed by <b>Iqra Khan</b> | Fixed Position Example 🌸
+    </footer>
+</body>
+
+</html>
